@@ -96,8 +96,8 @@ def main(text_column='text', target_column='target'):
         data_path = os.path.join("./data", "interim")
         os.makedirs(data_path, exist_ok=True)
 
-        train_preprocessed_data.to_csv(os.path.join(data_path, "train_preporcessed.csv"), index=False)
-        test_preprocessed_data.to_csv(os.path.join(data_path, "test_preporcessed.csv"), index=False)
+        train_preprocessed_data.to_csv(os.path.join(data_path, "train_preprocessed.csv"), index=False)
+        test_preprocessed_data.to_csv(os.path.join(data_path, "test_preprocessed.csv"), index=False)
         logger.debug("Preprocessed data saved to %s",data_path)
 
     except FileNotFoundError as e:
